@@ -21,12 +21,12 @@ const Header = () => {
           </Link>
 
           {/* Navigation Links */}
-          <div className="flex space-x-6">
+          <div className="flex space-x-2 sm:space-x-4 md:space-x-6">
             <Link
               to="/"
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive('/')
-                  ? 'bg-[#5a5a9e] dark:bg-primary-900 text-white dark:text-white'
+                  ? 'bg-[#5a5a9e] dark:bg-gray-800 text-white dark:text-white'
                   : 'text-gray-200 dark:text-gray-300 hover:bg-[#5a5a9e] dark:hover:bg-gray-800 hover:text-white dark:hover:text-primary-400'
               }`}
             >
@@ -37,7 +37,7 @@ const Header = () => {
               to="/repos"
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive('/repos')
-                  ? 'bg-[#5a5a9e] dark:bg-primary-900 text-white dark:text-white'
+                  ? 'bg-[#5a5a9e] dark:bg-gray-800 text-white dark:text-white'
                   : 'text-gray-200 dark:text-gray-300 hover:bg-[#5a5a9e] dark:hover:bg-gray-800 hover:text-white dark:hover:text-primary-400'
               }`}
             >
