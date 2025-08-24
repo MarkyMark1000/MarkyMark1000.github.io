@@ -18,8 +18,8 @@ module.exports = {
           600: '#2563eb',
           700: '#1d4ed8',
           800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          900: '#0a1628',  // Much darker blue for dark mode backgrounds
+          950: '#050b14',
         },
         secondary: {
           50: '#f8fafc',
