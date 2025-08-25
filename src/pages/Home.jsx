@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
 import PageTitle from '../components/PageTitle';
+import PageSubTitle from '../components/PageSubTitle';
 
 const Home = () => {
   return (
@@ -8,11 +9,7 @@ const Home = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <PageTitle title="Welcome to MarkyMark1000" />
-        <div className="text-center mb-12">
-          <p className="text-xl text-[#2C2C54] dark:text-gray-300 max-w-2xl mx-auto">
-            Explore my projects, code repositories, and development journey.
-          </p>
-        </div>
+        <PageSubTitle subtitle="Explore my projects, code repositories, and development journey." />
 
         {/* Content Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">

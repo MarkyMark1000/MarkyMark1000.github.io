@@ -1,5 +1,6 @@
 import React from 'react';
 import PageTitle from '../components/PageTitle';
+import PageSubTitle from '../components/PageSubTitle';
 
 const Repos = () => {
   return (
@@ -7,11 +8,7 @@ const Repos = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <PageTitle title="Welcome to MarkyMark1000" />
-        <div className="text-center mb-12">
-          <p className="text-xl text-[#2C2C54] dark:text-gray-300 max-w-2xl mx-auto">
-            Explore my projects, code repositories, and development journey.
-          </p>
-        </div>
+        <PageSubTitle subtitle="Explore my projects, code repositories, and development journey." />
 
         {/* Call to Action */}
         <div className="text-center mt-12">
