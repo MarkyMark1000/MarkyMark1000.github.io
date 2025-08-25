@@ -15,11 +15,19 @@ const Repos = () => {
         {/* Repository Cards */}
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-12">
           <CardRepo
-            image="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-            title="Sample Repository"
-            description="A showcase repository demonstrating modern web development practices with React, TypeScript, and advanced animations."
-            link="https://github.com/MarkyMark1000/sample-repo"
+            image="/images/repos/MarkyMark1000.jpg"
+            title="MarkyMark1000"
+            description="My personal github website showcasing repositories, skills, and my development journey. Built with react, tailwind, html and css."
+            link="https://github.com/MarkyMark1000/MarkyMark1000.github.io"
             delay={0}
+          />
+          
+          <CardRepo
+            image="/images/repos/unix_helper.jpg"
+            title="Unix Helper Scripts"
+            description="A collection of useful Unix/Linux helper scripts to simplify development and workflow automation."
+            link="https://github.com/MarkyMark1000/bin"
+            delay={200}
           />
         </div>
 
