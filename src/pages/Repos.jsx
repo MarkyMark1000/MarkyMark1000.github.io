@@ -1,14 +1,13 @@
 import React from 'react';
+import PageTitle from '../components/PageTitle';
 
 const Repos = () => {
   return (
     <div className="min-h-screen bg-indigo-50 dark:bg-black">
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
+        <PageTitle title="Welcome to MarkyMark1000" />
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#2C2C54] dark:text-white mb-4">
-            Welcome to MarkyMark1000
-          </h1>
           <p className="text-xl text-[#2C2C54] dark:text-gray-300 max-w-2xl mx-auto">
             Explore my projects, code repositories, and development journey.
           </p>
