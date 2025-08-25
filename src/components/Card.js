@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Card = ({ icon, title, description, delay = 0 }) => {
+const Card = ({ icon, title, children, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -20,15 +20,15 @@ const Card = ({ icon, title, description, delay = 0 }) => {
           : 'opacity-0 transform translate-y-8'
       }`}
     >
-      <div className="text-white dark:text-primary-400 mb-4">
+      <div className="text-white dark:text-primary-400 mb-2">
         {icon}
       </div>
       <h3 className="text-xl font-semibold text-white dark:text-white mb-2">
         {title}
       </h3>
-      <p className="text-gray-200 dark:text-gray-300">
-        {description}
-      </p>
+      <div className="text-gray-200 dark:text-gray-300">
+        {children}
+      </div>
     </div>
   );
 };

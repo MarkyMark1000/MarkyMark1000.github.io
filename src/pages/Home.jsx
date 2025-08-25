@@ -22,21 +22,32 @@ const Home = () => {
               </svg>
             }
             title="About Me"
-            description="Passionate developer creating innovative solutions and sharing knowledge through code."
             delay={0}
-          />
+          >
+            <p>Software engineer with a strong foundation in maths and physics, experienced in Python and Flask for backend development, and passionate about frontend technologies like Vue 3, React, HTML, and CSS. Also brings a background in finance with expertise in option pricing models.</p>
+          </Card>
 
-          {/* Projects Card */}
+          {/* Education Card */}
           <Card
             icon={
               <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
               </svg>
             }
-            title="Projects"
-            description="Discover my latest projects and contributions to the development community."
+            title="Education"
             delay={200}
-          />
+          >
+            <ul className="space-y-1">
+              <li className="flex items-start">
+                <span className="text-white mr-2 mt-1 text-sm">•</span>
+                <span>Physics - Imperial College London</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-white mr-2 mt-1 text-sm">•</span>
+                <span>Mathematical Trading and Finance - Bayes Business School</span>
+              </li>
+            </ul>
+          </Card>
 
           {/* Skills Card */}
           <Card
@@ -46,9 +57,10 @@ const Home = () => {
               </svg>
             }
             title="Skills"
-            description="Full-stack development with modern technologies and best practices."
             delay={400}
-          />
+          >
+            <p>Python, SQL, SQLAlchemy, Flask, Pandas, Numpy, FastAPI, Django, Docker, AWS, Vue3, React, JavaScript, HTML, CSS</p>
+          </Card>
         </div>
 
         {/* Call to Action */}
