@@ -37,7 +37,7 @@ const Home = () => {
             title="Education"
             delay={200}
           >
-            <ul className="space-y-1">
+            <ul className="space-y-1 text-left">
               <li className="flex items-start">
                 <span className="text-white mr-2 mt-1 text-sm">•</span>
                 <span>Physics - Imperial College London</span>
