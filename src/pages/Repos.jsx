@@ -9,7 +9,7 @@ const Repos = () => {
     <div className="min-h-screen bg-indigo-50 dark:bg-black">
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
-        <PageTitle title="Welcome to MarkyMark1000" />
+        <PageTitle title="MarkyMark1000's Repositories" />
         <PageSubTitle subtitle="Explore my projects, code repositories, and development journey." />
 
         {/* Repository Cards */}
