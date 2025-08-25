@@ -10,7 +10,7 @@ const Home = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <PageTitle title="Welcome to MarkyMark1000" />
-        <PageSubTitle subtitle="Explore my projects, code repositories, and development journey." />
+        <PageSubTitle subtitle="Explore my projects, code repositories and development journey." />
 
         {/* Content Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -24,7 +24,7 @@ const Home = () => {
             title="About Me"
             delay={0}
           >
-            <p>Software engineer with a strong foundation in maths and physics, experienced in Python and Flask for backend development, and passionate about frontend technologies like Vue 3, React, HTML, and CSS. Also brings a background in finance with expertise in option pricing models.</p>
+            <p>Software engineer with a strong foundation in maths and physics, experienced in Python and Flask for backend development and passionate about frontend technologies like Vue 3, React, HTML, and CSS. Also brings a background in finance with expertise in option pricing models.</p>
           </Card>
 
           {/* Education Card */}
