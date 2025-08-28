@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Header = () => {
   const location = useLocation();
 
-  const isActive = (path) => {
+  const isActive = path => {
     return location.pathname === path;
   };
 
@@ -13,8 +13,8 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           {/* Logo/Title */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="text-lg sm:text-xl md:text-2xl font-bold text-white dark:text-white hover:text-gray-200 dark:hover:text-gray-200 transition-colors"
           >
             MarkyMark1000
@@ -32,7 +32,7 @@ const Header = () => {
             >
               Home
             </Link>
-            
+
             <Link
               to="/repos"
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${

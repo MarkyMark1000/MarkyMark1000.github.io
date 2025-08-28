@@ -13,10 +13,10 @@ const ViewMyRepos = ({ delay = 0 }) => {
   }, [delay]);
 
   return (
-    <div 
+    <div
       className={`text-center mt-12 transition-all duration-1000 ease-out ${
-        isVisible 
-          ? 'opacity-100 transform translate-y-0' 
+        isVisible
+          ? 'opacity-100 transform translate-y-0'
           : 'opacity-0 transform translate-y-8'
       }`}
     >
@@ -28,7 +28,7 @@ const ViewMyRepos = ({ delay = 0 }) => {
       >
         View My Repositories
         <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
         </svg>
       </a>
     </div>

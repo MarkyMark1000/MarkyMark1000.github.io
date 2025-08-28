@@ -14,10 +14,10 @@ const PageSubTitle = ({ subtitle }) => {
 
   return (
     <div className="text-center mb-12">
-      <p 
+      <p
         className={`text-xl text-[#2C2C54] dark:text-gray-300 max-w-2xl mx-auto transition-all duration-1000 ease-out ${
-          isVisible 
-            ? 'opacity-100 transform translate-y-0' 
+          isVisible
+            ? 'opacity-100 transform translate-y-0'
             : 'opacity-0 transform translate-y-8'
         }`}
       >

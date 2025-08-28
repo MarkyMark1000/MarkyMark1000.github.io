@@ -21,7 +21,7 @@ const Repos = () => {
             link="https://github.com/MarkyMark1000/MarkyMark1000.github.io"
             delay={0}
           />
-          
+
           <CardRepo
             image="/images/repos/unix_helper.jpg"
             title="Unix Helper Scripts"

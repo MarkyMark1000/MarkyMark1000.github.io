@@ -13,22 +13,18 @@ const Card = ({ icon, title, children, delay = 0 }) => {
   }, [delay]);
 
   return (
-    <div 
+    <div
       className={`bg-[#474787] dark:bg-gray-800 border-2 border-[#ECECEC] dark:border-gray-600 rounded-lg shadow-[4px_4px_8px_rgba(71,71,135,0.3)] dark:shadow-[4px_4px_8px_rgba(156,163,175,0.2)] p-6 hover:shadow-[6px_6px_12px_rgba(71,71,135,0.4)] dark:hover:shadow-[6px_6px_12px_rgba(156,163,175,0.3)] transition-all duration-1000 ease-out ${
-        isVisible 
-          ? 'opacity-100 transform translate-y-0' 
+        isVisible
+          ? 'opacity-100 transform translate-y-0'
           : 'opacity-0 transform translate-y-8'
       }`}
     >
-      <div className="text-white dark:text-primary-400 mb-2">
-        {icon}
-      </div>
+      <div className="text-white dark:text-primary-400 mb-2">{icon}</div>
       <h3 className="text-xl font-semibold text-white dark:text-white mb-2">
         {title}
       </h3>
-      <div className="text-gray-200 dark:text-gray-300">
-        {children}
-      </div>
+      <div className="text-gray-200 dark:text-gray-300">{children}</div>
     </div>
   );
 };
