@@ -17,14 +17,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
-    "format:check": "prettier --check \"src/**/*.{js,jsx,json,css,md}\""
+    "format:check": "prettier --check \"src/**/*.{js,jsx,json,css,md}\"",
+    "cov": "yarn test --coverage --watchAll=false"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +37,13 @@
     "rules": {
       "prettier/prettier": "error"
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/reportWebVitals.js"
+    ]
   },
   "browserslist": {
     "production": [
